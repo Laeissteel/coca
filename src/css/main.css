@@ -1,3 +1,5 @@
 body {
+  display: inline;
+  width: 60px;
   background: gray;
 }
