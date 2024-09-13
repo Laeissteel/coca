@@ -1,7 +1,8 @@
 @import './mixins';
 @import './base';
-@import './globals/';
+@import './globals';
 
 // components
 @import './components/header';
-@import './components/home/hero.scss';
+@import './components/home/hero';
+@import './components/home/overview';
