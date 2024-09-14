@@ -11,7 +11,7 @@
 
   // Primary Colors
   --primary-color-50: #4e7ddb;
-  
+
   // success colors
   --success-color-70: #e2f8f0b3;
 
@@ -19,17 +19,17 @@
   --logo-color-text: #101010;
   --logo-color-circle: #101010;
 
-  // overview colors 
+  // overview colors
   --overview-bg-color: #1d1e25;
 
   // container
   --container-padding: 15px;
   --container-width: 1200px;
-  
+
   @include mini-desktop {
     --container-width: 1000px;
   }
-  
+
   @include tablet {
     --container-width: 860px;
   }
@@ -63,6 +63,6 @@
   // success colors
   --success-color-70: #e2f8f033;
 
-  // overview colors 
+  // overview colors
   --overview-bg-color: #18181d;
 }
