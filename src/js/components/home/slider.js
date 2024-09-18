@@ -9,8 +9,15 @@ export const useInsightSlider = () => {
     centeredSlides: true,
     breakpoints: {
       769: {
-    centeredSlides: false,
-      }
+        centeredSlides: false,
+      },
     },
+  });
+};
+
+export const useTestimonialsSlider = () => {
+  new Swiper('.testimonials__slider', {
+    slidesPerView: 1,
+    loop: true,
   });
 };

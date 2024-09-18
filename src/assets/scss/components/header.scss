@@ -1,5 +1,5 @@
 .header {
-  padding: 34px 0 34px;
+  padding: 34px 0;
   background-color: transparent;
 
   @include mobile {
@@ -181,6 +181,7 @@
     transition:
       opacity var(--transition),
       visibility var(--transition);
+
     &--visible {
       opacity: 1;
       visibility: visible;

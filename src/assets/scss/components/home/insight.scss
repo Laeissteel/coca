@@ -24,7 +24,7 @@
     margin-bottom: 80px;
     font-weight: 500;
     line-height: 178%;
-    color: #7e8492;
+    color: var(--neutral-color-150);
 
     @include mobile {
       margin-bottom: 40px;
@@ -85,7 +85,7 @@
       margin-bottom: 16px;
       font-weight: 400;
       line-height: 150%;
-      color: #7e8492;
+      color: var(--neutral-color-150);
 
       @include small-mobile {
         flex-direction: column;
