@@ -200,7 +200,7 @@
 
       &-num {
         display: inline-block;
-        margin-right: 3px;
+        margin-right: 6px;
         font-weight: 600;
         font-size: 14px;
         line-height: 143%;
@@ -209,6 +209,7 @@
           color: #60d39c;
 
           &::before {
+            margin-right: 4px;
             background: url('../assets/icons/arrow-up.svg');
           }
         }
@@ -217,6 +218,7 @@
           color: #e35454;
 
           &::before {
+            margin-right: 4px;
             background: url('../assets/icons/arrow-down.svg');
           }
         }
