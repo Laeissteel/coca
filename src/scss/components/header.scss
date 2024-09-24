@@ -1,9 +1,20 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-3);
   padding: 34px 0;
-  background-color: transparent;
+  width: 100%;
+  box-shadow: 0 16px 24px 0 #1e1e1e14;
+  background-color: var(--neutral-color-10);
+  transition: transform .3s linear;
 
   @include mobile {
     padding: 22px 0 18px;
+  }
+
+  &.hide {
+    transform: translateY(-100%)
   }
 
   &__container {
