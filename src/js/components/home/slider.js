@@ -1,4 +1,3 @@
-import { fa } from 'intl-tel-input/i18n';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
