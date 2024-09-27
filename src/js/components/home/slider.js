@@ -7,7 +7,7 @@ import 'swiper/css/autoplay';
 
 export const useInsightSlider = () => {
   new Swiper('.insight__slider', {
-    modules: [Navigation, Autoplay],
+    modules: [Navigation],
     slidesPerView: 'auto',
     spaceBetween: 32,
     loop: true,
@@ -26,7 +26,13 @@ export const useInsightSlider = () => {
 
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__slider', {
-    slidesPerView: 1,
+    modules: [Navigation],
+    spaceBetween: 22,
+    slidesPerView: 'auto',
     loop: true,
+    navigation: {
+      nextEl: '.testimonials__btn--prev',
+      prevEl: '.testimonials__btn--next',
+    },
   });
 };
