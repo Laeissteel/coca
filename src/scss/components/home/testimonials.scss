@@ -1,9 +1,24 @@
 .testimonials {
   padding: 69px 0 160px;
 
+  @include mobile {
+    padding: 39px 0 70px;
+  }
+
   &__head {
     @include flex-all-between;
     margin-bottom: 48px;
+
+    @include tablet {
+      gap: 24px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @include mobile {
+      gap: 12px;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -11,6 +26,10 @@
     font-weight: 600;
     letter-spacing: -0.04em;
     color: var(--neutral-color-100);
+
+    @include tablet {
+      max-width: 650px;
+    }
   }
 
   &__descr {
@@ -18,6 +37,10 @@
     font-weight: 500;
     line-height: 178%;
     color: var(--neutral-color-150);
+
+    @include tablet {
+      max-width: 450px;
+    }
   }
 
   &__rating {
@@ -40,6 +63,14 @@
       height: 77px;
       background: url('../assets/icons/quotes.svg');
       transform: translateY(15px);
+
+      @include mini-desktop {
+        transform: translateY(-5px);
+      }
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 
@@ -77,6 +108,50 @@
         line-height: 162%;
         color: var(--neutral-color-150);
       }
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    gap: 16px;
+    justify-content: flex-end;
+    transform: translateY(-40px);
+
+    @include mini-desktop {
+      transform: translateY(5px);
+    }
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid var(--neutral-color-40);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      border-color: var(--neutral-color-100);
+      background-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(-180deg);
     }
   }
 }
