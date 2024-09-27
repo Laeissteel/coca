@@ -1,13 +1,8 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 export const useInsightSlider = () => {
   new Swiper('.insight__slider', {
-    modules: [Navigation],
     slidesPerView: 'auto',
     spaceBetween: 32,
     loop: true,
@@ -26,13 +21,12 @@ export const useInsightSlider = () => {
 
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__slider', {
-    modules: [Navigation],
     spaceBetween: 22,
     slidesPerView: 'auto',
     loop: true,
     navigation: {
-      nextEl: '.testimonials__btn--prev',
-      prevEl: '.testimonials__btn--next',
+      nextEl: '.testimonials__btn--next',
+      prevEl: '.testimonials__btn--prev',
     },
   });
 };
